@@ -22,7 +22,14 @@ class Queue{
     int front(){
       return A[front];
     }
-    
+  
+    bool isEmpty(){
+       if(front == rear){
+         return true;
+       else
+         return false;
+    }
+      
 }
 
 

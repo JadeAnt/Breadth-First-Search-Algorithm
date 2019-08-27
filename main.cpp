@@ -14,7 +14,7 @@ class Queue{
   public:
     int A[MAX_SIZE];
     int rear = -1
-    int front = -1;
+    int front = 0;
     
   private:
   

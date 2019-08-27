@@ -2,6 +2,13 @@
 
 #define MAX_SIZE 30
 
+//Queue functions
+
+struct Vertex{
+  char label;
+  bool visited;
+};
+
 class Queue{
 
   public:
@@ -32,6 +39,24 @@ class Queue{
       
 }
 
+//graph functions
+  
+class Graph{
+  public:
+  
+  private:
+  
+    void addVertex(); //add vertex to vertex array
+  
+    void addEdge(); // add edge to edge array
+    
+    void displayVertex(); //display the vertex
+  
+    void getAdjUnvistedVertex(); // get the adjacent unvisted vertex
+  
+    void breadthFirstSearch(); //perform the breadth first search using queue functions as well
+    
+}
 
 
 int main(){

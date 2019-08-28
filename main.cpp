@@ -19,15 +19,15 @@ class Queue{
     
   private:
   
-    void enqueue(int data){
+    void enqueue(Vertex data){
       A[rear++] = data ;
     }
     
-    int dequeue(){
+    Vertex dequeue(){
       A[front++];
     }
     
-    int front(){
+    Vertex front(){
       return A[front];
     }
   

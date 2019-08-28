@@ -2,13 +2,14 @@
 
 #define MAX_SIZE 30
 
-//Queue functions
+using namespace std;
 
 struct Vertex{
   char label;
   bool visited;
 };
 
+//Queue functions
 class Queue{
 
   public:

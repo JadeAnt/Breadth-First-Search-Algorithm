@@ -31,7 +31,7 @@ class Queue{
     }
   
     bool isEmpty(){
-       if(front == rear){
+       if(front == rear)
          return true;
        else
          return false;

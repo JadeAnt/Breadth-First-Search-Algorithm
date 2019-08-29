@@ -1,6 +1,7 @@
 #include <iostream>
 
 #define MAX_SIZE 30
+#define MAX 5
 
 using namespace std;
 
@@ -16,15 +17,20 @@ class Queue{
     int A[MAX_SIZE];
     int rear = -1
     int front = 0;
-    
-  publi:
+    int queueSize = 0;
+  
+  public:
   
     void enqueue(Vertex data){
-      A[rear++] = data ;
+      A[rear++] = data;
+      queueSize++;
     }
     
     Vertex dequeue(){
-      A[front++];
+      data = A[front];
+      front++;
+      queueSize--;
+      return data;
     }
     
     Vertex front(){
@@ -32,7 +38,7 @@ class Queue{
     }
   
     bool isEmpty(){
-       if(front == rear)
+       if(queueSize == 0)
          return true;
        else
          return false;
@@ -41,6 +47,9 @@ class Queue{
 }
 
 //graph functions
+
+int adjMatrix[MAX][MAX]; // adjacency matrix of values
+struct Vertex* listVerticies[MAX]; //creating list of verticies and branches
   
 class Graph{
   private:

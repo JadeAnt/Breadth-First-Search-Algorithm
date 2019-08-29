@@ -12,12 +12,12 @@ struct Vertex{
 //Queue functions
 class Queue{
 
-  public:
+  private:
     int A[MAX_SIZE];
     int rear = -1
     int front = 0;
     
-  private:
+  publi:
   
     void enqueue(Vertex data){
       A[rear++] = data ;
@@ -43,9 +43,9 @@ class Queue{
 //graph functions
   
 class Graph{
-  public:
-  
   private:
+  
+  public:
   
     void addVertex(); //add vertex to vertex array
   

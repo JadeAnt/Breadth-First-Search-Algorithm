@@ -27,8 +27,7 @@ class Queue{
     }
     
     Vertex dequeue(){
-      data = A[front];
-      front++;
+      data = A[front++];
       queueSize--;
       return data;
     }

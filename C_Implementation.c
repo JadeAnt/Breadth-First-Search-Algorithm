@@ -43,8 +43,15 @@ bool isEmpty(){
 
 
 //graph functions
+void adjUnvisitedVertex();
 
+void addVertex();
 
+void addEdge();
+
+void 
+
+void breadthFirstSearch();
 
 int main(){
 

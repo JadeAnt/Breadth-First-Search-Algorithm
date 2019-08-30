@@ -10,9 +10,6 @@ struct Vertex{
   bool visited;
 };
 
-int adjMatrix[MAX][MAX];
-struct Vertex* listVerticies[MAX];
-
 //queue functions
 int A[MAX_SIZE];
 int rear = -1
@@ -43,15 +40,19 @@ bool isEmpty(){
 
 
 //graph functions
-void adjUnvisitedVertex();
+int adjMatrix[MAX][MAX];
+struct Vertex* listVerticies[MAX];
 
 void addVertex();
 
 void addEdge();
 
-void 
+void displayVertex(); 
+
+void adjUnvisitedVertex();
 
 void breadthFirstSearch();
+
 
 int main(){
 

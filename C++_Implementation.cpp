@@ -29,7 +29,7 @@ class Queue{
       queueSize--;
     }
   
-    Vertex front(){
+    Vertex frontQueue(){
       return queue.front();
     }
   

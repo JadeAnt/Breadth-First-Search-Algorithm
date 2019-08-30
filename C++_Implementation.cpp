@@ -14,12 +14,31 @@ struct Vertex{
 class Queue{
 
   private:
-    vector <int> A;
-    
+    vector <int> queue;  
+    int queueSize = 0;
   
   public:
   
-   
+    void enqueue(int data){
+      queue.push_back(data);
+      queueSize++;
+    }
+  
+    Vertex dequeue(){
+      queue.erase( queue.begin() );
+      queueSize--;
+    }
+  
+    Vertex front(){
+      return queue.front();
+    }
+  
+    bool isEmpty(){
+      if(queueSize == 0)
+        return true;
+      else
+        return false;
+    }
       
 }
 

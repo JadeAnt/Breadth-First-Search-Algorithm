@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#define MAX_SIZE  30
+#define MAX_SIZE 10
 #define MAX 5
 
 struct Vertex{
@@ -43,15 +43,15 @@ bool isEmpty(){
 int adjMatrix[MAX][MAX];
 struct Vertex* listVerticies[MAX];
 
-void addVertex();
+void addVertex(); //add vertex to vertex array
 
-void addEdge();
+void addEdge(); // add edge to edge array
 
-void displayVertex(); 
+void displayVertex(); //displays know verticies
 
-void adjUnvisitedVertex();
+void adjUnvisitedVertex(); //shows any adjacent unvisited verticies
 
-void breadthFirstSearch();
+void breadthFirstSearch(); //performs the breadthfirst search
 
 
 int main(){

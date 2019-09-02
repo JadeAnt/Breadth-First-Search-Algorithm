@@ -1,7 +1,6 @@
 #include <iostream>
 #include <list>
 
-#define MAX_SIZE 30
 #define MAX 5
 
 using namespace std;

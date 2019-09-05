@@ -58,6 +58,8 @@ class Graph{
   
     void addEdge(int src, int dest); // add edge to edge array
   
+    void addVertex(); // add vertex to vertex array
+  
     void breadthFirstSearch(); //perform the breadth first search using queue functions as well
     
 }
